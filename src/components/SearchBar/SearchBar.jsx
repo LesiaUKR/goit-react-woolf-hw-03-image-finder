@@ -25,7 +25,7 @@ export class Searchbar extends Component {
       return toast.error('Введіть назву картинки');
     }
     this.props.onSubmit(this.state.query);
-    // this.setState({ query: '' });
+    event.target.reset();
   };
 
   render() {
